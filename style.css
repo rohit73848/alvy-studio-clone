@@ -1,0 +1,232 @@
+@font-face {
+  font-family: jose;
+  src: url(./JosefinSans-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: jose;
+}
+
+html {
+  font-size: clamp(14px, 1.5vw, 18px);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+}
+
+main {
+  align-items: center;
+  width: 100%;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  padding: 0rem;
+}
+main .view1 {
+  width: 100%;
+  max-width: 2000px;
+  color: rgb(192, 192, 192);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .view1 .top {
+  width: 100%;
+}
+main .view1 .top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main .view1 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  padding: 1.75rem;
+  background-color: #1e1e1e;
+  border-radius: 0.7rem;
+}
+main .view1 .bottom p:nth-child(1) {
+  color: #f4f2ed;
+  margin-bottom: 3.3rem;
+}
+main .view1 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0rem;
+}
+main .view1 .bottom .text h1 {
+  color: #f4f2ed;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 2.31rem;
+  margin-bottom: 0.7rem;
+}
+main .view1 .bottom .text p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  opacity: 0.8;
+  line-height: 2.18rem;
+}
+main .view1 .bottom .text .scroll {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  margin-top: 0.7rem;
+}
+main .view1 .bottom .text .scroll i {
+  background-color: #2b2b2b;
+  padding: 9px 11px;
+  font-size: 1.7rem;
+  font-weight: 400;
+  border-radius: 50%;
+  border: 1px solid #414141;
+}
+main .view1 .bottom .text .scroll p {
+  color: #f4f2ed;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+main .view2 {
+  margin-top: 2.7rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .view2 .top, main .view2 .bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #121212;
+}
+main .view2 .top .element, main .view2 .bottom .element {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 0rem;
+}
+main .view2 .top .element h2, main .view2 .bottom .element h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+main .view2 .top .element small, main .view2 .bottom .element small {
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.6;
+}
+main .view3 {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .view3 .top {
+  width: 100%;
+}
+main .view3 .top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main .view3 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 1.75rem;
+  background-color: #1e1e1e;
+  border-radius: 0.7rem;
+}
+main .view3 .bottom .bottom-title {
+  text-transform: uppercase;
+}
+main .view3 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0rem;
+}
+main .view3 .bottom .text h1 {
+  color: #f4f2ed;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 2.31rem;
+  margin-bottom: 0.7rem;
+}
+main .view3 .bottom .text p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  opacity: 0.5;
+  line-height: 1.56rem;
+}
+
+@media (min-width: 900px) {
+  main .view1 {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  main .view1 .top {
+    width: 50%;
+  }
+  main .view1 .top img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .view1 .bottom {
+    width: 50%;
+    justify-content: space-between;
+  }
+  main .view1 .bottom .text h1 {
+    font-size: 3.62rem;
+    font-weight: 300;
+  }
+  main .view1 .bottom .text p {
+    font-weight: 400;
+  }
+  main .view2 {
+    flex-direction: row;
+  }
+  main .view2 .top, main .view2 .bottom {
+    width: 50%;
+  }
+  main .view3 {
+    flex-direction: row-reverse;
+  }
+  main .view3 .top {
+    width: 50%;
+  }
+  main .view3 .top img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .view3 .bottom {
+    width: 50%;
+    justify-content: space-between;
+  }
+  main .view3 .bottom .text h1 {
+    font-size: 2.68rem;
+    font-weight: 500;
+  }
+  main .view3 .bottom .text p {
+    font-weight: 400;
+  }
+  main .view3 .bottom .text .para {
+    display: flex;
+    gap: 1.56rem;
+    text-align: left;
+  }
+}/*# sourceMappingURL=style.css.map */
