@@ -216,6 +216,67 @@ main .view4 .bottom .text p {
   opacity: 0.5;
   line-height: 1.56rem;
 }
+main .view5 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  width: 100%;
+}
+main .view5 .card {
+  width: 100%;
+  background-image: url(./view5-card1-img.webp);
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1/1;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+main .view5 .card .icon, main .view5 .card .bottom {
+  background-color: rgba(117, 117, 117, 0.349);
+  backdrop-filter: blur(5px);
+  border-radius: 0.7rem;
+  border: 1px solid rgba(211, 211, 211, 0.349);
+  padding: 0.5rem 0.7rem;
+}
+main .view5 .card .top {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+main .view5 .card .bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.7rem 1.5rem;
+}
+main .view5 .card .bottom p:nth-child(1) {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+main .view5 .card .bottom p {
+  text-transform: uppercase;
+}
+main .view5 .card .icon {
+  backdrop-filter: blur(7px);
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  background-color: rgba(70, 67, 67, 0.349);
+}
+main .view5 .card .icon i {
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+main .view5 .card2 {
+  background-image: url(./view5-card2-img.webp);
+}
+main .view5 .card3 {
+  background-image: url(./view5-card3-img.webp);
+}
 
 @media (min-width: 900px) {
   main .view1 {
@@ -300,5 +361,24 @@ main .view4 .bottom .text p {
     display: flex;
     gap: 1.56rem;
     text-align: left;
+  }
+  main .view5 {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  main .view5 .card .top .icon {
+    padding: 0.5rem 0.6rem;
+  }
+  main .view5 .card .top .icon i {
+    font-size: 0.9rem;
+  }
+  main .view5 .card .bottom {
+    padding: 1rem 1rem;
+  }
+  main .view5 .card .bottom p:nth-child(1) {
+    font-size: 1rem;
+  }
+  main .view5 .card .bottom p:nth-child(2) {
+    font-size: 0.8rem;
   }
 }/*# sourceMappingURL=style.css.map */
