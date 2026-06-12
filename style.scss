@@ -274,8 +274,8 @@ main {
 
     .bottom{
       @include flex-column(0rem, 1.75rem);
-      background-color: #1e1e1e;
       border-radius: 0.7rem;
+      background-color: #1e1e1e;
 
       .text{
         p{
@@ -316,6 +316,57 @@ main {
       }
     }
   }
+
+  /* ── BASE (Mobile) ── */
+.view7 {
+  // background: #1a1a1a;
+  padding: 16px;
+  width: 100%;
+}
+
+.cta-section {
+  background: #CEBD63;
+  border-radius: 12px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;   /* mobile: উপর-নিচে */
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.cta-label {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #332c09;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.cta-heading {
+  font-size: clamp(1.8rem, 8vw, 2.6rem);
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;           /* mobile: full width */
+  padding: 14px 24px;
+  background: #111111;
+  color: #f4f2ed;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
 }
 @media (min-width: 900px) {
   main {
@@ -475,5 +526,21 @@ main {
         }
       }
     }
+
+    .cta-section {
+    flex-direction: row;      /* desktop: পাশাপাশি */
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 40px 48px;
+  }
+
+  .cta-heading {
+    font-size: clamp(2.2rem, 5vw, 4.2rem);
+  }
+
+  .cta-btn {
+    width: auto;              /* desktop: content অনুযায়ী */
+  }
+
   }
 }

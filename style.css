@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: jose;
   src: url(./JosefinSans-Light.ttf);
@@ -303,8 +304,8 @@ main .view6 .bottom {
   flex-direction: column;
   gap: 0rem;
   padding: 1.75rem;
-  background-color: #1e1e1e;
   border-radius: 0.7rem;
+  background-color: #1e1e1e;
 }
 main .view6 .bottom .text p {
   text-transform: uppercase;
@@ -337,6 +338,52 @@ main .view6 .bottom .find-job p {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
+}
+main {
+  /* ── BASE (Mobile) ── */
+}
+main .view7 {
+  padding: 16px;
+  width: 100%;
+}
+main .cta-section {
+  background: #CEBD63;
+  border-radius: 12px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column; /* mobile: উপর-নিচে */
+  align-items: flex-start;
+  gap: 24px;
+}
+main .cta-label {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #332c09;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+main .cta-heading {
+  font-size: clamp(1.8rem, 8vw, 2.6rem);
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+main .cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%; /* mobile: full width */
+  padding: 14px 24px;
+  background: #111111;
+  color: #f4f2ed;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 6px;
 }
 
 @media (min-width: 900px) {
@@ -472,5 +519,17 @@ main .view6 .bottom .find-job p {
   }
   main .view6 .bottom .find-job p {
     font-size: 0.8rem;
+  }
+  main .cta-section {
+    flex-direction: row; /* desktop: পাশাপাশি */
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 40px 48px;
+  }
+  main .cta-heading {
+    font-size: clamp(2.2rem, 5vw, 4.2rem);
+  }
+  main .cta-btn {
+    width: auto; /* desktop: content অনুযায়ী */
   }
 }/*# sourceMappingURL=style.css.map */
